@@ -1,0 +1,11 @@
+{
+  "id": 20772026,
+  "name": "ltt2077 的 GKD 合并订阅",
+  "repository": "ltt2077/gkd-merged",
+  "sources": [
+    {"key": "local", "namespace": 1, "id": 667, "path": "sources/local.json5"},
+    {"key": "aisouler", "namespace": 2, "id": 666, "url": "https://raw.githubusercontent.com/AIsouler/GKD_subscription/main/dist/AIsouler_gkd.json5"},
+    {"key": "ganlin", "namespace": 3, "id": 233, "url": "https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files"},
+    {"key": "mengnian", "namespace": 4, "id": 1, "url": "https://registry.npmmirror.com/gkd-subscription/latest/files"}
+  ]
+}

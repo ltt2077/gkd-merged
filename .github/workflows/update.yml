@@ -1,0 +1,50 @@
+name: Update GKD subscription
+
+on:
+  schedule:
+    # 04:23 China / Singapore time (UTC+8). GitHub may delay scheduled runs.
+    - cron: '23 20 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'sources/config.json'
+      - 'sources/local.json5'
+      - 'requirements.txt'
+      - '.github/workflows/update.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gkd-subscription-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install parser
+        run: python -m pip install -r requirements.txt
+      - name: Test merger
+        run: python -m unittest discover -s tests -v
+      - name: Fetch, merge and validate
+        run: python scripts/merge.py
+      - name: Commit validated files and daily health report
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dist sources/cache
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'chore: update merged GKD subscription and health report'
+          git push origin HEAD:main
