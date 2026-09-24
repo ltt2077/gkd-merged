@@ -1,7 +1,7 @@
 {
   "id": 20772026,
   "name": "ltt2077 的 GKD 合并订阅",
-  "version": 1,
+  "version": 2,
   "author": "ltt2077 / 原规则作者见仓库来源说明",
   "checkUpdateUrl": "./gkd.version.json5",
   "supportUri": "https://github.com/ltt2077/gkd-merged",
@@ -121238,12 +121238,15 @@
           "key": 3000002,
           "name": "全屏广告-我的",
           "fastQuery": true,
-          "actionMaximum": 1,
+          "activityIds": "com.zzw.october.MainActivity",
           "rules": [
             {
-              "activityIds": "com.zzw.october.MainActivity",
               "matches": "FrameLayout[childCount=5] > FrameLayout > ImageView[text=null]",
               "snapshotUrls": "https://i.gkd.li/import/14661569"
+            },
+            {
+              "matches": "@ImageView < FrameLayout[id=\"com.zzw.october:id/fl_close\"] < [id=\"com.zzw.october:id/dialog_root\"]",
+              "snapshotUrls": "https://i.gkd.li/i/32597470"
             }
           ],
           "enable": false
@@ -121251,18 +121254,20 @@
         {
           "key": 3000004,
           "name": "全屏广告-主页广告",
-          "activityIds": [
-            "com.zzw.october.MainActivity"
-          ],
+          "activityIds": "com.zzw.october.MainActivity",
+          "fastQuery": true,
           "rules": [
             {
               "key": 1,
-              "fastQuery": true,
               "matches": "[id=\"com.zzw.october:id/interact_ad_root\"] >n ImageView[id=\"com.zzw.october:id/iv_close\"]",
               "snapshotUrls": [
                 "https://i.gkd.li/import/12842675",
                 "https://i.gkd.li/import/12869369"
               ]
+            },
+            {
+              "matches": "@ImageView < FrameLayout - FrameLayout > TextView[text=\"进入小程序\"] - FrameLayout > [text=\"上滑或点击按钮查看详情\"]",
+              "snapshotUrls": "https://i.gkd.li/i/32597173"
             }
           ],
           "enable": false

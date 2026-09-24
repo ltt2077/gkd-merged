@@ -1,9 +1,9 @@
 {
   "inputGroups": 6764,
-  "inputRules": 10545,
+  "inputRules": 10547,
   "outputApps": 1034,
   "outputGroups": 4939,
-  "outputRules": 7650,
+  "outputRules": 7652,
   "removedRules": 2895,
   "removedGroups": 1825,
   "duplicates": [
@@ -67414,14 +67414,6 @@
       "rules": 1
     },
     {
-      "app": "com.ss.android.ugc.aweme.mobile",
-      "key": 3000002,
-      "source": "ganlin",
-      "originalKey": 1,
-      "name": "青少年模式",
-      "rules": 1
-    },
-    {
       "app": "com.ss.android.ugc.aweme",
       "key": 3000000,
       "source": "ganlin",
@@ -67531,6 +67523,14 @@
       "source": "ganlin",
       "originalKey": 15,
       "name": "全屏广告-关闭商城推荐",
+      "rules": 1
+    },
+    {
+      "app": "com.ss.android.ugc.aweme.mobile",
+      "key": 3000002,
+      "source": "ganlin",
+      "originalKey": 1,
+      "name": "青少年模式",
       "rules": 1
     },
     {
@@ -73955,7 +73955,7 @@
       "source": "ganlin",
       "originalKey": 1,
       "name": "全屏广告-我的",
-      "rules": 1
+      "rules": 2
     },
     {
       "app": "com.zzw.october",
@@ -73963,7 +73963,7 @@
       "source": "ganlin",
       "originalKey": 2,
       "name": "全屏广告-主页广告",
-      "rules": 1
+      "rules": 2
     },
     {
       "app": "com.huawei.smarthome",
@@ -74318,6 +74318,14 @@
       "rules": 1
     },
     {
+      "app": "com.zmsoft.forwatch",
+      "key": 3000002,
+      "source": "ganlin",
+      "originalKey": 1,
+      "name": "全屏广告-弹窗广告",
+      "rules": 1
+    },
+    {
       "app": "com.zidongdianji",
       "key": 3000002,
       "source": "ganlin",
@@ -74347,14 +74355,6 @@
       "source": "ganlin",
       "originalKey": 10,
       "name": "权限提示-请求定位权限弹窗",
-      "rules": 1
-    },
-    {
-      "app": "com.zmsoft.forwatch",
-      "key": 3000002,
-      "source": "ganlin",
-      "originalKey": 1,
-      "name": "全屏广告-弹窗广告",
       "rules": 1
     },
     {
@@ -77391,10 +77391,10 @@
       "key": "ganlin",
       "location": "https://registry.npmmirror.com/@ganlinte/gkd-subscription/latest/files",
       "id": 233,
-      "version": 71,
+      "version": 72,
       "name": "甘霖的GKD订阅",
-      "rules": 1988,
-      "sha256": "f63582630e63f300f718ecff202ea536f634fe91b8f08d0617cbe8422c1430cf",
+      "rules": 1990,
+      "sha256": "3d7f24259d4f47d64a8633173df7309e11f7e372647590fc55f33c8f5257b65f",
       "status": "fresh"
     },
     {
@@ -77408,8 +77408,8 @@
       "status": "fresh"
     }
   ],
-  "checkedAt": "2026-09-23T23:00:52.734994+00:00",
-  "version": 1,
-  "contentChanged": false,
-  "contentSha256": "ee987b9344f538afb4d7a3a0b0631fde362b40229bc305dabf6b69cae83781ff"
+  "checkedAt": "2026-09-24T23:16:11.336932+00:00",
+  "version": 2,
+  "contentChanged": true,
+  "contentSha256": "2eac9320b627a99aed44072535b7c2826774f1a442353506b2c294cba330722b"
 }
