@@ -1,11 +1,11 @@
 {
-  "inputGroups": 6764,
-  "inputRules": 10547,
+  "inputGroups": 6759,
+  "inputRules": 10550,
   "outputApps": 1034,
-  "outputGroups": 4939,
-  "outputRules": 7652,
-  "removedRules": 2895,
-  "removedGroups": 1825,
+  "outputGroups": 4940,
+  "outputRules": 7669,
+  "removedRules": 2881,
+  "removedGroups": 1819,
   "duplicates": [
     {
       "source": "aisouler",
@@ -26349,22 +26349,6 @@
     },
     {
       "source": "mengnian",
-      "app": "com.tencent.mobileqq",
-      "groups": [
-        29
-      ],
-      "reason": "equivalent-component",
-      "rules": 2,
-      "kept": {
-        "source": "local",
-        "app": "com.tencent.mobileqq",
-        "groups": [
-          37
-        ]
-      }
-    },
-    {
-      "source": "mengnian",
       "app": "com.rarlab.rar",
       "groups": [
         10
@@ -26741,22 +26725,6 @@
         ],
         "ruleIndex": 0,
         "ruleKey": null
-      }
-    },
-    {
-      "source": "mengnian",
-      "app": "com.twitter.android",
-      "groups": [
-        1
-      ],
-      "reason": "equivalent-component",
-      "rules": 5,
-      "kept": {
-        "source": "local",
-        "app": "com.twitter.android",
-        "groups": [
-          1
-        ]
       }
     },
     {
@@ -28127,6 +28095,26 @@
       "source": "mengnian",
       "app": "tv.danmaku.bili",
       "groups": [
+        7
+      ],
+      "ruleIndex": 2,
+      "ruleKey": 3,
+      "reason": "equivalent-independent-rule",
+      "rules": 1,
+      "kept": {
+        "source": "local",
+        "app": "tv.danmaku.bili",
+        "groups": [
+          7
+        ],
+        "ruleIndex": 2,
+        "ruleKey": 3
+      }
+    },
+    {
+      "source": "mengnian",
+      "app": "tv.danmaku.bili",
+      "groups": [
         8
       ],
       "ruleIndex": 0,
@@ -28141,42 +28129,6 @@
         ],
         "ruleIndex": 0,
         "ruleKey": 0
-      }
-    },
-    {
-      "source": "mengnian",
-      "app": "tv.danmaku.bili",
-      "groups": [
-        8
-      ],
-      "ruleIndex": 1,
-      "ruleKey": 1,
-      "reason": "equivalent-independent-rule",
-      "rules": 1,
-      "kept": {
-        "source": "local",
-        "app": "tv.danmaku.bili",
-        "groups": [
-          8
-        ],
-        "ruleIndex": 1,
-        "ruleKey": 1
-      }
-    },
-    {
-      "source": "mengnian",
-      "app": "tv.danmaku.bili",
-      "groups": [
-        9
-      ],
-      "reason": "equivalent-component",
-      "rules": 2,
-      "kept": {
-        "source": "local",
-        "app": "tv.danmaku.bili",
-        "groups": [
-          14
-        ]
       }
     },
     {
@@ -33847,22 +33799,6 @@
       "source": "mengnian",
       "app": "com.netease.cloudmusic",
       "groups": [
-        1
-      ],
-      "reason": "equivalent-component",
-      "rules": 4,
-      "kept": {
-        "source": "local",
-        "app": "com.netease.cloudmusic",
-        "groups": [
-          1
-        ]
-      }
-    },
-    {
-      "source": "mengnian",
-      "app": "com.netease.cloudmusic",
-      "groups": [
         2
       ],
       "ruleIndex": 0,
@@ -33952,22 +33888,6 @@
         "app": "com.netease.cloudmusic",
         "groups": [
           14
-        ]
-      }
-    },
-    {
-      "source": "mengnian",
-      "app": "com.netease.cloudmusic",
-      "groups": [
-        16
-      ],
-      "reason": "equivalent-component",
-      "rules": 2,
-      "kept": {
-        "source": "local",
-        "app": "com.netease.cloudmusic",
-        "groups": [
-          16
         ]
       }
     },
@@ -36077,6 +35997,26 @@
         "groups": [
           1
         ]
+      }
+    },
+    {
+      "source": "mengnian",
+      "app": "com.unionpay",
+      "groups": [
+        3
+      ],
+      "ruleIndex": 1,
+      "ruleKey": 1,
+      "reason": "equivalent-independent-rule",
+      "rules": 1,
+      "kept": {
+        "source": "local",
+        "app": "com.unionpay",
+        "groups": [
+          9
+        ],
+        "ruleIndex": 0,
+        "ruleKey": null
       }
     },
     {
@@ -75218,8 +75158,8 @@
       "key": 4000004,
       "source": "mengnian",
       "originalKey": 2,
-      "name": "分段广告-好友动态广告卡片",
-      "rules": 4
+      "name": "分段广告-广告卡片菜单",
+      "rules": 10
     },
     {
       "app": "com.tencent.mobileqq",
@@ -75287,27 +75227,11 @@
     },
     {
       "app": "com.tencent.mobileqq",
-      "key": 4000024,
-      "source": "mengnian",
-      "originalKey": 12,
-      "name": "分段广告-QQ小世界评论区广告",
-      "rules": 2
-    },
-    {
-      "app": "com.tencent.mobileqq",
       "key": 4000026,
       "source": "mengnian",
       "originalKey": 13,
       "name": "全屏广告-QQ小程序开屏广告",
       "rules": 1
-    },
-    {
-      "app": "com.tencent.mobileqq",
-      "key": 4000040,
-      "source": "mengnian",
-      "originalKey": 20,
-      "name": "分段广告-钱包页卡片广告",
-      "rules": 3
     },
     {
       "app": "com.tencent.mobileqq",
@@ -75343,11 +75267,11 @@
     },
     {
       "app": "com.tencent.mobileqq",
-      "key": 4000060,
+      "key": 4000058,
       "source": "mengnian",
-      "originalKey": 30,
-      "name": "分段广告-空友爱看内的广告",
-      "rules": 3
+      "originalKey": 29,
+      "name": "分段广告-QQ空间空友爱看",
+      "rules": 4
     },
     {
       "app": "cn.soulapp.android",
@@ -75372,6 +75296,14 @@
       "originalKey": 4,
       "name": "全屏广告-关闭[开启WPS云服务]弹窗",
       "rules": 2
+    },
+    {
+      "app": "com.twitter.android",
+      "key": 4000002,
+      "source": "mengnian",
+      "originalKey": 1,
+      "name": "分段广告-主页信息流广告",
+      "rules": 5
     },
     {
       "app": "com.twitter.android",
@@ -75546,8 +75478,8 @@
       "key": 4000008,
       "source": "mengnian",
       "originalKey": 4,
-      "name": "分段广告-视频卡片广告",
-      "rules": 4
+      "name": "分段广告-视频及搜索卡片广告",
+      "rules": 6
     },
     {
       "app": "tv.danmaku.bili",
@@ -75555,6 +75487,14 @@
       "source": "mengnian",
       "originalKey": 8,
       "name": "局部广告-直播间悬浮窗广告",
+      "rules": 2
+    },
+    {
+      "app": "tv.danmaku.bili",
+      "key": 4000024,
+      "source": "mengnian",
+      "originalKey": 12,
+      "name": "全屏广告-完善信息弹窗",
       "rules": 1
     },
     {
@@ -76151,18 +76091,18 @@
     },
     {
       "app": "com.xunmeng.pinduoduo",
-      "key": 4000016,
+      "key": 4000004,
       "source": "mengnian",
-      "originalKey": 8,
-      "name": "局部广告-商品详情页视频讲解窗口",
+      "originalKey": 2,
+      "name": "全屏广告",
       "rules": 1
     },
     {
       "app": "com.xunmeng.pinduoduo",
-      "key": 4000024,
+      "key": 4000016,
       "source": "mengnian",
-      "originalKey": 12,
-      "name": "全屏广告-下单后出现的弹窗",
+      "originalKey": 8,
+      "name": "局部广告-商品详情页视频讲解窗口",
       "rules": 1
     },
     {
@@ -76503,6 +76443,14 @@
     },
     {
       "app": "com.netease.cloudmusic",
+      "key": 4000002,
+      "source": "mengnian",
+      "originalKey": 1,
+      "name": "分段广告-卡片广告",
+      "rules": 6
+    },
+    {
+      "app": "com.netease.cloudmusic",
       "key": 4000008,
       "source": "mengnian",
       "originalKey": 4,
@@ -76674,7 +76622,7 @@
       "key": 4000044,
       "source": "mengnian",
       "originalKey": 22,
-      "name": "功能类-付款后自动点击完成/返回商家",
+      "name": "功能类-收款付款后自动点击完成/返回",
       "rules": 1
     },
     {
@@ -77401,15 +77349,15 @@
       "key": "mengnian",
       "location": "https://registry.npmmirror.com/gkd-subscription/latest/files",
       "id": 1,
-      "version": 77,
+      "version": 78,
       "name": "梦念逍遥のGKD订阅",
-      "rules": 1535,
-      "sha256": "34aea712bcdebe9ea0d7ff9a80d19dfc69fd7c41fcb49665740e607d6f10098d",
+      "rules": 1538,
+      "sha256": "8838a22b36fe797290addc18422715ea91ff7486d462ed9cf7cdfb119280cb90",
       "status": "fresh"
     }
   ],
-  "checkedAt": "2026-09-29T00:27:04.182952+00:00",
-  "version": 2,
-  "contentChanged": false,
-  "contentSha256": "2eac9320b627a99aed44072535b7c2826774f1a442353506b2c294cba330722b"
+  "checkedAt": "2026-09-29T23:48:21.403378+00:00",
+  "version": 3,
+  "contentChanged": true,
+  "contentSha256": "78e66b1ccf74a2ec66d15ca33884212600d69798987939e7b6364cfddaabf63e"
 }
