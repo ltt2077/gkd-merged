@@ -1,7 +1,7 @@
 {
   "id": 20772026,
   "name": "ltt2077 的 GKD 合并订阅",
-  "version": 3,
+  "version": 4,
   "author": "ltt2077 / 原规则作者见仓库来源说明",
   "checkUpdateUrl": "./gkd.version.json5",
   "supportUri": "https://github.com/ltt2077/gkd-merged",
@@ -11702,7 +11702,7 @@
             "[text*=\"skip\"][name!$=\".CheckBox\"][name!$=\".EditText\"][name!$=\".ProgressBar\"][childCount=0][visibleToUser=true][height>0&&width>0&&width<500&&height<300][top>0&&left>0][text.length<10][((text*=\"跳过\"||text*=\"跳 过\"||text*=\"跳過\"||text*=\"跳 過\"||text~=\"(?is).*skip.*\")&&text!*=\"视频\"&&text!*=\"片头\"&&text!*=\"片尾\")][!(text~=\"([01]?[0-9]|2[0-3])[:：][0-5][0-9]\")][!(desc~=\"([01]?[0-9]|2[0-3])[:：][0-5][0-9]\")]",
             "[text*=\"Skip\"][name!$=\".CheckBox\"][name!$=\".EditText\"][name!$=\".ProgressBar\"][childCount=0][visibleToUser=true][height>0&&width>0&&width<500&&height<300][top>0&&left>0][text.length<10][((text*=\"跳过\"||text*=\"跳 过\"||text*=\"跳過\"||text*=\"跳 過\"||text~=\"(?is).*skip.*\")&&text!*=\"视频\"&&text!*=\"片头\"&&text!*=\"片尾\")][!(text~=\"([01]?[0-9]|2[0-3])[:：][0-5][0-9]\")][!(desc~=\"([01]?[0-9]|2[0-3])[:：][0-5][0-9]\")]",
             "[text*=\"SKIP\"][name!$=\".CheckBox\"][name!$=\".EditText\"][name!$=\".ProgressBar\"][childCount=0][visibleToUser=true][height>0&&width>0&&width<500&&height<300][top>0&&left>0][text.length<10][((text*=\"跳过\"||text*=\"跳 过\"||text*=\"跳過\"||text*=\"跳 過\"||text~=\"(?is).*skip.*\")&&text!*=\"视频\"&&text!*=\"片头\"&&text!*=\"片尾\")][!(text~=\"([01]?[0-9]|2[0-3])[:：][0-5][0-9]\")][!(desc~=\"([01]?[0-9]|2[0-3])[:：][0-5][0-9]\")]",
-            "[vid=\"tt_splash_skip_btn\"||vid=\"btn_skip\"||vid=\"skip_btn\"||vid=\"skip_button\"||vid=\"skipButton\"||vid=\"ad_skip\"||vid=\"ad_skip_btn\"||vid=\"splash_skip\"||vid=\"splash_skip_btn\"||vid=\"tme_ad_skip_button\"||vid=\"skip_ad_button\"||vid=\"ksad_splash_skip_view\"||vid=\"ksad_skip_view\"][name!$=\".CheckBox\"][name!$=\".EditText\"][name!$=\".ProgressBar\"][childCount=0][visibleToUser=true][height>0&&width>0&&width<500&&height<300][top>0&&left>0][vid~=\"(?is).*skip.*\"][vid!~=\"(?is).*video.*\"][vid!~=\"(?is).*head.*\"][vid!~=\"(?is).*tail.*\"][!(text=\"帮助\")][!(text=\"取消\")][!(text*=\"退出\")][!(text~=\"([01]?[0-9]|2[0-3])[:：][0-5][0-9]\")][!(desc~=\"([01]?[0-9]|2[0-3])[:：][0-5][0-9]\")]",
+            "[vid=\"tt_splash_skip_btn\"||vid=\"btn_skip\"||vid=\"skip_btn\"||vid=\"skip_button\"||vid=\"skipButton\"||vid=\"ad_skip\"||vid=\"ad_skip_btn\"||vid=\"splash_skip\"||vid=\"splash_skip_btn\"||vid=\"tme_ad_skip_button\"||vid=\"skip_ad_button\"||vid=\"splash_ad_close\"||vid=\"ksad_splash_skip_view\"||vid=\"ksad_skip_view\"][name!$=\".CheckBox\"][name!$=\".EditText\"][name!$=\".ProgressBar\"][childCount=0][visibleToUser=true][height>0&&width>0&&width<500&&height<300][top>0&&left>0][vid~=\"(?is).*skip.*\"][vid!~=\"(?is).*video.*\"][vid!~=\"(?is).*head.*\"][vid!~=\"(?is).*tail.*\"][!(text=\"帮助\")][!(text=\"取消\")][!(text*=\"退出\")][!(text~=\"([01]?[0-9]|2[0-3])[:：][0-5][0-9]\")][!(desc~=\"([01]?[0-9]|2[0-3])[:：][0-5][0-9]\")]",
             "[vid=\"count_down\"||vid=\"count_down_view\"||vid=\"countDown\"||vid=\"countDownView\"||vid=\"gdt_count_down_view\"||vid=\"GdtCountDownView\"||vid=\"ui_count_down\"][name!$=\".CheckBox\"][name!$=\".EditText\"][name!$=\".ProgressBar\"][childCount=0][visibleToUser=true][height>0&&width>0&&width<500&&height<300][top>0&&left>0][(vid~=\"(?is).*count.*\"&&vid~=\"(?is).*down.*\"&&!(vid~=\"(?is).*load.*\")&&!(vid~=\"(?is).*hour.*\")&&!(vid~=\"(?is).*minute.*\")&&!(vid~=\"(?is).*timing.*\")&&!(vid~=\"(?is).*add.*\")&&!(vid~=\"(?is).*ead.*\"))][!(text~=\"([01]?[0-9]|2[0-3])[:：][0-5][0-9]\")][!(desc~=\"([01]?[0-9]|2[0-3])[:：][0-5][0-9]\")]"
           ],
           "excludeSnapshotUrls": [
@@ -90055,6 +90055,23 @@
           ],
           "snapshotUrls": "https://i.gkd.li/import/13832272",
           "enable": false
+        },
+        {
+          "key": 4000000,
+          "name": "开屏广告",
+          "fastQuery": true,
+          "matchTime": 10000,
+          "actionMaximum": 1,
+          "resetMatch": "app",
+          "priorityTime": 10000,
+          "rules": [
+            {
+              "matches": "[text*=\"跳过\"][vid=\"splash_ad_close\"][visibleToUser=true]",
+              "snapshotUrls": "https://i.gkd.li/i/34161773"
+            }
+          ],
+          "order": -10,
+          "enable": true
         },
         {
           "key": 4000002,

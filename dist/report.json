@@ -1,9 +1,9 @@
 {
-  "inputGroups": 6759,
-  "inputRules": 10550,
+  "inputGroups": 6760,
+  "inputRules": 10551,
   "outputApps": 1034,
-  "outputGroups": 4940,
-  "outputRules": 7669,
+  "outputGroups": 4941,
+  "outputRules": 7670,
   "removedRules": 2881,
   "removedGroups": 1819,
   "duplicates": [
@@ -76707,6 +76707,14 @@
     },
     {
       "app": "com.taobao.idlefish",
+      "key": 4000000,
+      "source": "mengnian",
+      "originalKey": 0,
+      "name": "开屏广告",
+      "rules": 1
+    },
+    {
+      "app": "com.taobao.idlefish",
       "key": 4000002,
       "source": "mengnian",
       "originalKey": 1,
@@ -77349,15 +77357,15 @@
       "key": "mengnian",
       "location": "https://registry.npmmirror.com/gkd-subscription/latest/files",
       "id": 1,
-      "version": 78,
+      "version": 79,
       "name": "梦念逍遥のGKD订阅",
-      "rules": 1538,
-      "sha256": "8838a22b36fe797290addc18422715ea91ff7486d462ed9cf7cdfb119280cb90",
+      "rules": 1539,
+      "sha256": "b0ba018f1228b77fec1ed5f626f2fc93fdcb2f89f784f5fdf0e351bec83e3b06",
       "status": "fresh"
     }
   ],
-  "checkedAt": "2026-10-30T00:00:00.315796+00:00",
-  "version": 3,
-  "contentChanged": false,
-  "contentSha256": "78e66b1ccf74a2ec66d15ca33884212600d69798987939e7b6364cfddaabf63e"
+  "checkedAt": "2026-10-30T23:55:18.927561+00:00",
+  "version": 4,
+  "contentChanged": true,
+  "contentSha256": "5587cd740aabce20d0a567bb4e0c18752cd4a737e8613c67c118ed9ed8daa478"
 }
